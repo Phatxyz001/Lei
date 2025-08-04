@@ -1,0 +1,283 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HACKED</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: black;
+      overflow: hidden;
+      font-family: 'Orbitron', monospace;
+      color: #00FF00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    .centered {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .title {
+      font-size: 60px;
+      text-shadow: 0 0 25px #00FF00;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #00FF00;
+      margin-top: 10px;
+      text-shadow: 0 0 10px #00FF00;
+    }
+
+    .itachi {
+      width: 350px;
+      border-radius: 19px;
+      border: 2px solid #00FF00;
+      box-shadow: 0 0 20px #00FF00;
+      transition: transform 0.3s ease-in-out;
+      margin: 20px auto 10px auto;
+      display: block;
+    }
+
+    .itachi:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #00FF00;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid #00FF00;
+      display: inline-block;
+      text-shadow: 0 0 5px #00FF00;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background: transparent;
+      border: 1px solid #00FF00;
+      color: #00FF00;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .buttons button:hover {
+      background: #00FF00;
+      color: black;
+    }
+
+    #timer {
+      font-size: 60px;
+      text-shadow: 0 0 15px #00FF00;
+      user-select: none;
+      margin-top: 30px;
+    }
+
+    iframe {
+      position: absolute;
+      top: -1000px;
+      left: -1000px;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    #lostMsg, #breachMsg {
+      position: fixed;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      color: red;
+      background: rgba(0,0,0,0.9);
+      padding: 20px 30px;
+      border: 2px solid red;
+      border-radius: 10px;
+      z-index: 9999;
+      display: none;
+      text-shadow: 0 0 10px red;
+    }
+
+    #dot {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 12px;
+      height: 12px;
+      background: red;
+      border-radius: 50%;
+      box-shadow: 0 0 10px red;
+      z-index: 10000;
+    }
+
+    .glitch {
+      animation: glitch 0.5s linear infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      25% { transform: translate(-2px, 2px); }
+      50% { transform: translate(2px, -2px); }
+      75% { transform: translate(-2px, 1px); }
+      100% { transform: translate(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      .title { font-size: 36px; }
+      .subtitle { font-size: 16px; }
+      .itachi { width: 180px; }
+      #timer { font-size: 40px; }
+    }
+  </style>
+</head>
+<body class="">
+
+
+<audio autoplay loop>
+  <source src=https://cdn.discordapp.com/attachments/1401965763203432578/1401968729251774464/Lamis_Kan_-_Mesaytara_Official_Music_Video_-_.mp3?ex=689234a0&is=6890e320&hm=168e2db37bd80398158c13159c4b49d8033659db1a904f70721332ab77e06dde&">
+</audio>
+
+<div id="lostMsg" style="display: none;"> 😂1 ngày thật tốt lành nhé😂 </div>
+<div id="breachMsg" style="display: none;">🥱 EZ AnF 🥱</div>
+<div id="dot" style="display: block;"></div>
+
+<div class="centered">
+  <img src="https://cdn.discordapp.com/attachments/1401965763203432578/1401966918629326899/photo_2025-05-09_16-48-09.jpg?ex=689232f0&is=6890e170&hm=95c047b8d97d917f8fa712544f96d8d93c2d35c224d0995862bc31f51de56390&.gif" alt="Itachi" class="itachi" id="img">
+
+  <div class="title"> #Hacked by TP Prime </div>
+  <div class="subtitle">Chào AnF</div>
+  <div class="subtitle">Chơi game thế đủ rồi tắt máy đi ngủ đi AE</div>
+  <div class="subtitle"> by #Hacked by TP Prime</div>
+
+  <div class="info" id="geoInfo">🌐 IP:  | 🏳️ Country: Viet Nam | 🏙️ City: </div>
+
+  <div class="buttons">
+    <button>Không có gì mang tính cá nhân. Chỉ là quyền lực mà thôi</button>
+    <button>Bạn chưa bao giờ AN TOÀN</button>
+    <button>Đây không phải nghệ thuật. Đây là TRÌNH</button>
+    <button>Tôi làm chủ thực tại của Bạn</button>
+    <button>GO TO SLEEP BITCHES</button>
+  </div>
+
+  <div id="timer">64</div>
+</div>
+
+
+<script>
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(data => {
+      const info = `🌐 IP: ${data.ip} | 🏳️ Country: ${data.country_name} | 🏙️ City: ${data.city}`;
+      document.getElementById("geoInfo").textContent = info;
+    })
+    .catch(() => {
+      document.getElementById("geoInfo").textContent = "Failed to fetch IP info.";
+    });
+
+  let elapsed = 0;
+  const timerEl = document.getElementById('timer');
+  function tick() {
+    timerEl.textContent = elapsed;
+    elapsed++;
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
+
+<canvas id="bg" height="954" width="1912"></canvas>
+<script>
+  const canvas = document.getElementById("bg");
+  const ctx = canvas.getContext("2d");
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  const chars = "010101";
+  const font_size = 16;
+  const columns = canvas.width / font_size;
+  const drops = Array(Math.floor(columns)).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00FF00";
+    ctx.font = font_size + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillText(text, i * font_size, drops[i] * font_size);
+      if (drops[i] * font_size > canvas.height && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    }
+  }
+  setInterval(draw, 33);
+</script>
+
+
+<script>
+  setInterval(() => {
+    document.body.classList.toggle("glitch");
+  }, 6000);
+</script>
+
+
+<script>
+  setInterval(() => {
+    const msg = document.getElementById("lostMsg");
+    msg.style.display = "block";
+    setTimeout(() => { msg.style.display = "none"; }, 2000);
+  }, 25000);
+</script>
+
+
+<script>
+  setInterval(() => {
+    const msg = document.getElementById("breachMsg");
+    msg.style.display = "block";
+    setTimeout(() => { msg.style.display = "none"; }, 2500);
+  }, 18000);
+</script>
+
+
+<script>
+  setInterval(() => {
+    const dot = document.getElementById("dot");
+    dot.style.display = dot.style.display === "none" ? "block" : "none";
+  }, 800);
+</script>
+
+
+
+</body></html>
